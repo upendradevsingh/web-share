@@ -1,6 +1,6 @@
 {
   "name": "web-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy Web Share Plugin for Everyone",
   "main": "ws.js",
   "scripts": {
