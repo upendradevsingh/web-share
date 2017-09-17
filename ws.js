@@ -15,7 +15,7 @@
  */
 (function (root) {
     // If share api is not available
-    if (navigator.share) {
+    if (!navigator.share) {
         console.warn('Web Share API is not available');
         return false;
     }
