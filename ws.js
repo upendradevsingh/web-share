@@ -55,12 +55,3 @@
 
     root.__web_share__ = __web_share__;
 }(window));
-
-__web_share__.attach({
-	target: '.product-image',
-	style: {
-		position: 'absolute',
-		right: '10px',
-        bottom: '40px' 
-	}
-})
