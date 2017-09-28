@@ -31,6 +31,7 @@
 
         const container = document.querySelector(options.target);
         const host = document.createElement('p');
+        const cb = options.cb;
         let url = document.location.href;
         const canonicalElement = document.querySelector('link[rel=canonical]');
         if (canonicalElement !== undefined) {
@@ -48,6 +49,7 @@
         }
         host.innerHTML = svg;
         host.addEventListener('click', function () {
+            if(typeof cb === 'function') cb();
             navigator.share({url: url});
         });
         container.appendChild(host);
