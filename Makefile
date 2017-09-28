@@ -1,0 +1,2 @@
+ws:
+	npm run ws
